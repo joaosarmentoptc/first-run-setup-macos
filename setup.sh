@@ -22,6 +22,10 @@ else
     echo "✅ Homebrew already installed."
 fi
 
+echo "🔄 Updating and upgrading Homebrew..."
+brew update
+brew upgrade
+
 # Install ZSH plugins
 ZSH_CUSTOM=${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}
 
@@ -62,6 +66,7 @@ fi
 
 # Install brew casks
 echo "🍺 Installing brew casks..."
+
 brew install --cask \
     aldente \
     finicky \
@@ -79,6 +84,10 @@ brew install --cask \
     google-chrome \
     macs-fan-control \
     microsoft-teams \
-    postman
+    postman \
+    vlc \
+    visual-studio-code \
+    nordvpn \
+    tuxera-ntfs
 
 echo "🎉 Setup complete! Restart your terminal to apply all changes."
