@@ -88,6 +88,7 @@ brew install --cask \
     vlc \
     visual-studio-code \
     nordvpn \
-    tuxera-ntfs
+    tuxera-ntfs \
+    bitwarden
 
 echo "🎉 Setup complete! Restart your terminal to apply all changes."
