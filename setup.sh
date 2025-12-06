@@ -86,9 +86,8 @@ brew install --cask \
     microsoft-teams \
     postman \
     vlc \
-    visual-studio-code \
     nordvpn \
     tuxera-ntfs \
-    bitwarden
+    iterm2
 
 echo "🎉 Setup complete! Restart your terminal to apply all changes."
