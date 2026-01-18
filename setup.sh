@@ -68,26 +68,31 @@ fi
 echo "🍺 Installing brew casks..."
 
 brew install --cask \
-    aldente \
-    finicky \
-    keka \
-    mactex \
-    mongodb-compass \
-    qbittorrent \
-    dbeaver-community \
-    freelens \
-    maccy \
-    microsoft-auto-update \
-    notion \
-    sublime-text \
-    docker \
-    google-chrome \
-    macs-fan-control \
-    microsoft-teams \
-    postman \
-    vlc \
-    nordvpn \
-    tuxera-ntfs \
-    iterm2
+  aldente \
+  bitwarden \
+  dbeaver-community \
+  docker-desktop \
+  finicky \
+  font-hack-nerd-font \
+  freelens \
+  google-chrome \
+  iterm2 \
+  keka \
+  maccy \
+  macs-fan-control \
+  mactex \
+  microsoft-auto-update \
+  microsoft-teams \
+  mongodb-compass \
+  ngrok \
+  nordvpn \
+  notion \
+  postman \
+  qbittorrent \
+  sublime-text \
+  transmission \
+  tuxera-ntfs \
+  vlc \
+  whatsapp
 
 echo "🎉 Setup complete! Restart your terminal to apply all changes."
