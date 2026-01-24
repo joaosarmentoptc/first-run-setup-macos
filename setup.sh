@@ -54,9 +54,9 @@ echo "⚙️ Configuring .zshrc..."
 ZSHRC="$HOME/.zshrc"
 # Replace plugins line
 if grep -q "^plugins=" "$ZSHRC"; then
-    sed -i '' 's/^plugins=.*/plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)/' "$ZSHRC"
+    sed -i '' 's/^plugins=.*/plugins=(git zsh-autosuggestions fast-syntax-highlighting zsh-autocomplete)/' "$ZSHRC"
 else
-    echo "plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)" >> "$ZSHRC"
+    echo "plugins=(git zsh-autosuggestions fast-syntax-highlighting zsh-autocomplete)" >> "$ZSHRC"
 fi
 
 # Add unsetopt CASE_GLOB if not already present
