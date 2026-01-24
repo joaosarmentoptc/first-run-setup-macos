@@ -70,12 +70,12 @@ echo "🍺 Installing brew casks..."
 brew install --cask \
   aldente \
   bitwarden \
+  brave-browser \
   dbeaver-community \
   docker-desktop \
   finicky \
   font-hack-nerd-font \
   freelens \
-  google-chrome \
   iterm2 \
   keka \
   maccy \
