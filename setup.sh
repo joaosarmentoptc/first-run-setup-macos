@@ -64,9 +64,35 @@ if ! grep -q "unsetopt CASE_GLOB" "$ZSHRC"; then
   echo "unsetopt CASE_GLOB" >>"$ZSHRC"
 fi
 
+# Adds Catppuccin themes to ~/.themes
+echo "🎨 Installing Catppuccin themes..."
+THEMES_DIR="$HOME/.themes"
+mkdir -p "$THEMES_DIR"
+
+catppuccin_repos=(
+  "https://github.com/zhichaoh/catppuccin-wallpapers.git"
+  "https://github.com/JannoTjarks/catppuccin-zsh.git"
+  "https://github.com/catppuccin/chrome.git"
+  "https://github.com/catppuccin/ghostty.git"
+  "https://github.com/catppuccin/userstyles.git"
+  "https://github.com/catppuccin/zsh-fsh.git"
+)
+
+for repo in "${catppuccin_repos[@]}"; do
+  # Extract the repo name from the URL to create a unique folder name
+  repo_name=$(basename "$repo" .git)
+  target_theme_dir="${THEMES_DIR}/${repo_name}"
+
+  if [ ! -d "$target_theme_dir" ]; then
+    echo "🔗 Cloning $repo_name into ~/.themes/..."
+    git clone "$repo" "$target_theme_dir"
+  else
+    echo "✅ Theme $repo_name already exists."
+  fi
+done
+
 # Install brew casks
 echo "🍺 Installing brew casks..."
-
 brew install --cask \
   bitwarden \
   brave-browser \
